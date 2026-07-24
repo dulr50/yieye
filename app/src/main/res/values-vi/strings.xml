@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">YiEye</string>
+    <string name="float_permission_msg">Vui lòng mở quyền cửa sổ nổi thủ công</string>
+    <string name="open">Mở</string>
+    <string name="waiting_recognition">Đang chờ nhận diện...</string>
+    <string name="start_analysis">Bắt đầu dịch vụ phân tích</string>
+    <string name="stop_analysis">Dừng dịch vụ phân tích</string>
+    <string name="board_recognition_debug">Gỡ lỗi nhận diện bàn cờ</string>
+    <string name="calculation_depth">Độ sâu tính toán:</string>
+    <string name="waiting_analysis">Đang chờ phân tích...</string>
+    <string name="analysis_service_started">Dịch vụ phân tích đã bắt đầu</string>
+    <string name="grant_float_permission_tip">Vui lòng cấp quyền cửa sổ nổi để hiển thị nước đi gợi ý</string>
+    <string name="unknown">Không xác định</string>
+    <string name="none_ponder">Không có</string>
+    <string name="turn_red">【Đến lượt Đỏ】</string>
+    <string name="turn_black">【Đến lượt Đen】</string>
+    <string name="recommend">Gợi ý: </string>
+    <string name="ponder">Nước đi tiếp theo: </string>
+    <string name="time_consumed">Thời gian: </string>
+    <string name="auto_identify_side">>>> Tự động nhận diện phe: </string>
+    <string name="screen_bottom"> (Dưới cùng màn hình) &lt;&lt;&lt;</string>
+    <string name="side_red">Bên Đỏ</string>
+    <string name="side_black">Bên Đen</string>
+    <string name="board_change_my_turn">Cục diện thay đổi (Đến lượt ta %s), bắt đầu phân tích...</string>
+    <string name="board_change_oppo_turn">Cục diện thay đổi (Đến lượt đối phương %s), đang chờ...</string>
+    <string name="analyzing">Đến lượt ta, đang phân tích...\n</string>
+    <string name="waiting">Đến lượt đối phương, đang chờ...\n</string>
+    <string name="service_notification_title">Tự động nhận diện bàn cờ</string>
+    <string name="service_notification_text">Đang giám sát cục diện màn hình...</string>
+    <string name="engine_load_failed">Tải engine thất bại: </string>
+    <string name="mate_in">Chiếu bí (%s)</string>
+    <string name="battery_setting">Cài đặt tối ưu pin</string>
+
+    <string name="log_analyze_timeout">Phân tích quá 18 giây không phản hồi, buộc khôi phục chụp màn hình</string>
+    <string name="log_no_board_found">Không tìm thấy bàn cờ (Chụp: %1$dms, Kiểm tra: %2$dms)</string>
+    <string name="log_fen_recognized">Nhận diện FEN: %1$s (Chụp: %2$dms, Kiểm tra: %3$dms, Nhận diện: %4$dms)</string>
+    <string name="log_best_move">★★★ Nước đi gợi ý cuối cùng (Thời gian: %1$dms): %2$s ★★★</string>
+    <string name="log_board_change">Cục diện thay đổi cmp.diffCount=%d)</string>
+
+    <!-- Chess Pieces and Moves -->
+    <string name="chess_zero">0</string>
+    <string name="chess_one">1</string>
+    <string name="chess_two">2</string>
+    <string name="chess_three">3</string>
+    <string name="chess_four">4</string>
+    <string name="chess_five">5</string>
+    <string name="chess_six">6</string>
+    <string name="chess_seven">7</string>
+    <string name="chess_eight">8</string>
+    <string name="chess_nine">9</string>
+    <string name="chess_che">Xe</string>
+    <string name="chess_ma">Mã</string>
+    <string name="chess_xiang">Tượng</string>
+    <string name="chess_xiang_black">Tượng</string>
+    <string name="chess_shi">Sĩ</string>
+    <string name="chess_shi_black">Sĩ</string>
+    <string name="chess_jiang">Tướng</string>
+    <string name="chess_jiang_black">Tướng</string>
+    <string name="chess_pao">Pháo</string>
+    <string name="chess_bing">Tốt</string>
+    <string name="chess_bing_black">Tốt</string>
+    <string name="chess_hou">Sau</string>
+    <string name="chess_qian">Trước</string>
+    <string name="chess_zhong">Giữa</string>
+    <string name="chess_ping">Bình</string>
+    <string name="chess_jin">Tấn</string>
+    <string name="chess_tui">Thoái</string>
+</resources>

@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">弈眼</string>
+    <string name="float_permission_msg">请手动打开悬浮窗权限</string>
+    <string name="open">开启</string>
+    <string name="waiting_recognition">正在等待识别...</string>
+    <string name="start_analysis">启动分析服务</string>
+    <string name="stop_analysis">停止分析服务</string>
+    <string name="board_recognition_debug">棋盘识别调试</string>
+    <string name="calculation_depth">计算深度:</string>
+    <string name="waiting_analysis">等待分析...</string>
+    <string name="analysis_service_started">分析服务已启动</string>
+    <string name="grant_float_permission_tip">请授予悬浮窗权限以显示推荐走法</string>
+    <string name="unknown">未知</string>
+    <string name="none_ponder">无</string>
+    <string name="turn_red">【轮到红方】</string>
+    <string name="turn_black">【轮到黑方】</string>
+    <string name="recommend">推荐: </string>
+    <string name="ponder">续着: </string>
+    <string name="time_consumed">耗时：</string>
+    <string name="auto_identify_side">>>> 自动识别我方颜色: </string>
+    <string name="screen_bottom"> (屏幕底部) &lt;&lt;&lt;</string>
+    <string name="side_red">红方</string>
+    <string name="side_black">黑方</string>
+    <string name="board_change_my_turn">局面变化 (轮到我方%s)，开始分析...</string>
+    <string name="board_change_oppo_turn">局面变化 (轮到对方%s)，等待...</string>
+    <string name="analyzing">轮到我方 正在分析...\n</string>
+    <string name="waiting">轮到对方 等待中...\n</string>
+    <string name="service_notification_title">棋盘自动识别中</string>
+    <string name="service_notification_text">正在监控屏幕局面...</string>
+    <string name="engine_load_failed">加载引擎时失败: </string>
+    <string name="mate_in">绝杀 (%s)</string>
+    <string name="battery_setting">电池优化设置</string>
+
+    <string name="log_analyze_timeout">分析超过18秒未返回，强制恢复截屏</string>
+    <string name="log_no_board_found">未找到棋盘 (截屏: %1$dms, 检测: %2$dms)</string>
+    <string name="log_fen_recognized">识别到 FEN: %1$s (截屏: %2$dms, 检测: %3$dms, 识别: %4$dms)</string>
+    <string name="log_best_move">★★★ 最终推荐走法 (耗时: %1$dms): %2$s ★★★</string>
+    <string name="log_board_change">局面变化 cmp.diffCount=%d)</string>
+
+    <!-- Chess Pieces and Moves -->
+    <string name="chess_zero">零</string>
+    <string name="chess_one">一</string>
+    <string name="chess_two">二</string>
+    <string name="chess_three">三</string>
+    <string name="chess_four">四</string>
+    <string name="chess_five">五</string>
+    <string name="chess_six">六</string>
+    <string name="chess_seven">七</string>
+    <string name="chess_eight">八</string>
+    <string name="chess_nine">九</string>
+    <string name="chess_che">车</string>
+    <string name="chess_ma">马</string>
+    <string name="chess_xiang">相</string>
+    <string name="chess_xiang_black">象</string>
+    <string name="chess_shi">仕</string>
+    <string name="chess_shi_black">士</string>
+    <string name="chess_jiang">帅</string>
+    <string name="chess_jiang_black">将</string>
+    <string name="chess_pao">炮</string>
+    <string name="chess_bing">兵</string>
+    <string name="chess_bing_black">卒</string>
+    <string name="chess_hou">后</string>
+    <string name="chess_qian">前</string>
+    <string name="chess_zhong">中</string>
+    <string name="chess_ping">平</string>
+    <string name="chess_jin">进</string>
+    <string name="chess_tui">退</string>
+</resources>

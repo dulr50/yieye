@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YiEye</string>
+    <string name="float_permission_msg">Please enable floating window permission manually</string>
+    <string name="open">Open</string>
+    <string name="waiting_recognition">Waiting for recognition...</string>
+    <string name="start_analysis">Start Analysis Service</string>
+    <string name="stop_analysis">Stop Analysis Service</string>
+    <string name="board_recognition_debug">Board Recognition Debug</string>
+</resources>
