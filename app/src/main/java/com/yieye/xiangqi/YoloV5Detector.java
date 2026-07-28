@@ -21,7 +21,7 @@ import ai.onnxruntime.OnnxTensor;
 import ai.onnxruntime.OrtEnvironment;
 import ai.onnxruntime.OrtSession;
 
-public class YoloV5Detector {
+public class YoloV5Detector implements ChessDetector {
     private static final String TAG = "YoloV5Detector";
     private final OrtEnvironment env;
     private final OrtSession session;
@@ -42,6 +42,7 @@ public class YoloV5Detector {
         session = env.createSession(modelBytes);
     }
 
+    @Override
     public List<YoloResult> detect(Bitmap bitmap) throws Exception {
         // 使用保持比例的缩放 (Letterbox 思想的简化版)
         Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, INPUT_WIDTH, INPUT_HEIGHT, true);

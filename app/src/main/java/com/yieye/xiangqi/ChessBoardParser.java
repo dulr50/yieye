@@ -11,18 +11,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ChessBoardParser {
-//    private static final String TAG = "ChessBoardParser";
+    private static final String TAG = "ChessBoardParser";
 
     public interface FenCallback {
         void onResult(String fen, List<YoloResult> results);
     }
 
-    private static YoloV5Detector cachedDetector;
+    // true = 使用 YOLOv11 (yolov11.onnx)；false = 使用 YOLOv5 (middle.onnx)
+    private static final boolean USE_YOLO_V11 = true;
+
+    private static ChessDetector cachedDetector;
     private static RectF cachedCropRect = null;
 
-    private static synchronized YoloV5Detector getDetector(Context context) throws Exception {
+    private static synchronized ChessDetector getDetector(Context context) throws Exception {
         if (cachedDetector == null) {
-            cachedDetector = new YoloV5Detector(context, "middle.onnx");
+            if (USE_YOLO_V11) {
+                try {
+                    cachedDetector = new YoloV11Detector(context, "yolov11.onnx");
+                } catch (Exception e) {
+                    LogUtil.e(TAG, "YOLOv11 模型加载失败，回退使用 YOLOv5 模型: " + e.getMessage(), e);
+                    cachedDetector = new YoloV5Detector(context, "middle.onnx");
+                }
+            } else {
+                cachedDetector = new YoloV5Detector(context, "middle.onnx");
+            }
         }
         return cachedDetector;
     }
@@ -60,7 +72,7 @@ public class ChessBoardParser {
         }
 
         try {
-            YoloV5Detector detector = getDetector(context);
+            ChessDetector detector = getDetector(context);
             List<YoloResult> results = detector.detect(bitmap);
             YoloResult board = null;
             if (results != null) {
@@ -133,7 +145,7 @@ public class ChessBoardParser {
                     callback.onResult(null, null);
                     return;
                 }
-                YoloV5Detector detector = getDetector(context);
+                ChessDetector detector = getDetector(context);
                 List<YoloResult> results = detector.detect(bitmap);
                 if (results == null || results.isEmpty()) {
                     callback.onResult(null, null);

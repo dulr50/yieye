@@ -295,7 +295,7 @@ public class AnalysisService extends Service {
                         }
                     } else {
                         // 局面没变，直接释放状态
-//                        LogUtil.w(TAG, String.format("未能识别有效局面 (识别耗时: %dms)", parseTime));
+                        LogUtil.w(TAG, String.format("未能识别有效局面 (识别耗时: %dms)", parseTime) + fen);
                         isAnalyzing = false;
                     }
                 });

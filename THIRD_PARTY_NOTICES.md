@@ -19,12 +19,24 @@ as required by the third-party GPLv3 components it incorporates.
 - Used for: `app/src/main/assets/middle.onnx`, a YOLOv5-based board/piece
   detection model used for recognizing the chessboard from screenshots/photos.
 
+## public-Xiangqi (TCHESS)
+
+- Project: TCHESS
+- Source: https://github.com/sojourners/public-Xiangqi
+- License: GNU GPLv3 (full text bundled at
+  [third_party_licenses/public-Xiangqi-LICENSE](third_party_licenses/public-Xiangqi-LICENSE))
+- Used for: `app/src/main/assets/yolov11.onnx`, a newer YOLOv11-based (anchor-free,
+  DFL head) board/piece detection model, and the output-decoding logic
+  (from `com.sojourners.chess.yolo.Yolo11Model`/`OnnxModel`) ported into
+  `app/src/main/java/com/yieye/xiangqi/YoloV11Detector.java`.
+
 ## ONNX Runtime
 
 - Source: https://github.com/microsoft/onnxruntime
 - License: MIT License
-- Used for: running the `.onnx` board-detection model on Android
-  (`ai.onnxruntime.*` in `app/src/main/java/com/demo/mychess/YoloV5Detector.java`).
+- Used for: running the `.onnx` board-detection models on Android
+  (`ai.onnxruntime.*` in `app/src/main/java/com/yieye/xiangqi/YoloV5Detector.java`
+  and `YoloV11Detector.java`).
 
 ---
 
