@@ -14,7 +14,7 @@ as required by the third-party GPLv3 components it incorporates.
 
 ## VinXiangQi
 
-- Source: (VinXiangQi Windows project — see `VinXiangQi-1.4.0/`)
+- Source: https://github.com/Vincentzyx/VinXiangQi  (VinXiangQi Windows project — see `VinXiangQi-1.4.0/`)
 - License: GNU GPLv3 (see `VinXiangQi-1.4.0/LICENSE`)
 - Used for: `app/src/main/assets/middle.onnx`, a YOLOv5-based board/piece
   detection model used for recognizing the chessboard from screenshots/photos.
